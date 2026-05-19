@@ -1,0 +1,353 @@
+[
+  {
+    "meta": {
+      "timestamp": "2025-05-10 21:24:14",
+      "input_text": "I ate too much, now my stomach is not feeling well, it really hurts"
+    },
+    "sentiment_analysis": {
+      "combined": {
+        "label": "Negative",
+        "score": -0.8389
+      },
+      "vader": {
+        "score": -0.6785,
+        "label": "Negative"
+      },
+      "distilbert": {
+        "label": "NEGATIVE",
+        "score": 0.9993,
+        "mapped_score": -0.9993
+      }
+    },
+    "emotional_significance": {
+      "label": "Normal Routine",
+      "score": 0.2
+    },
+    "temporal_context": {
+      "event_age": "2 days ago",
+      "event_date": "2025-05-08",
+      "time_indicators": [
+        "no specific time detected"
+      ]
+    },
+    "spatial_context": {
+      "location": "No location detected"
+    },
+    "activity_references": [],
+    "relationship_indicators": {
+      "family_mentions": []
+    },
+    "emotional_indicators": {
+      "grief_indicators": [
+        "active_grief"
+      ],
+      "trauma_indicators": [],
+      "severity_indicators": [
+        "grief_present"
+      ]
+    },
+    "care_needs": {
+      "potential_concerns": [
+        "safety_risk"
+      ],
+      "recommendations": [
+        "Validate feelings and provide emotional support",
+        "Consider scheduled discussion of memories in controlled therapeutic setting",
+        "Consider distraction techniques if distress increases",
+        "Schedule enjoyable activity following difficult memory discussions",
+        "Monitor for signs of depression or withdrawal"
+      ]
+    }
+  },
+  {
+    "meta": {
+      "timestamp": "2025-05-11 00:31:52",
+      "input_text": "I ate so much cake in my nephew's birthday, which was so tasty"
+    },
+    "sentiment_analysis": {
+      "combined": {
+        "label": "Positive",
+        "score": 0.4997
+      },
+      "vader": {
+        "score": 0.0,
+        "label": "Neutral"
+      },
+      "distilbert": {
+        "label": "POSITIVE",
+        "score": 0.9995,
+        "mapped_score": 0.9995
+      }
+    },
+    "emotional_significance": {
+      "label": "Normal Routine",
+      "score": 0.3
+    },
+    "temporal_context": {
+      "event_age": "1 week(s) ago",
+      "event_date": "2025-05-04",
+      "time_indicators": [
+        "no specific time detected"
+      ]
+    },
+    "spatial_context": {
+      "location": "No location detected"
+    },
+    "activity_references": [],
+    "relationship_indicators": {
+      "family_mentions": [
+        "nephew"
+      ]
+    },
+    "emotional_indicators": {
+      "grief_indicators": [],
+      "trauma_indicators": [],
+      "severity_indicators": [
+        "normal"
+      ]
+    },
+    "care_needs": {
+      "potential_concerns": [],
+      "recommendations": []
+    }
+  },
+  {
+    "meta": {
+      "timestamp": "2025-05-11 00:32:37",
+      "input_text": "I ate so much cake in my nephew's birthday party, that now I'm unwell, and it is hurting too much"
+    },
+    "sentiment_analysis": {
+      "combined": {
+        "label": "Negative",
+        "score": -0.4996
+      },
+      "vader": {
+        "score": 0.0,
+        "label": "Neutral"
+      },
+      "distilbert": {
+        "label": "NEGATIVE",
+        "score": 0.9993,
+        "mapped_score": -0.9993
+      }
+    },
+    "emotional_significance": {
+      "label": "Normal Routine",
+      "score": 0.3
+    },
+    "temporal_context": {
+      "event_age": "Today",
+      "event_date": "2025-05-11",
+      "time_indicators": [
+        "no specific time detected"
+      ]
+    },
+    "spatial_context": {
+      "location": "No location detected"
+    },
+    "activity_references": [],
+    "relationship_indicators": {
+      "family_mentions": [
+        "nephew"
+      ]
+    },
+    "emotional_indicators": {
+      "grief_indicators": [
+        "active_grief"
+      ],
+      "trauma_indicators": [],
+      "severity_indicators": [
+        "grief_present"
+      ]
+    },
+    "care_needs": {
+      "potential_concerns": [
+        "safety_risk"
+      ],
+      "recommendations": [
+        "Validate feelings and provide emotional support",
+        "Consider scheduled discussion of memories in controlled therapeutic setting",
+        "Consider distraction techniques if distress increases",
+        "Schedule enjoyable activity following difficult memory discussions",
+        "Monitor for signs of depression or withdrawal"
+      ]
+    }
+  },
+  {
+    "meta": {
+      "timestamp": "2025-05-11 06:02:20",
+      "input_text": "I ate so much on my party, that now I'm feeling unwell, and it's hurts"
+    },
+    "sentiment_analysis": {
+      "combined": {
+        "label": "Negative",
+        "score": -0.4869
+      },
+      "vader": {
+        "score": 0.0258,
+        "label": "Neutral"
+      },
+      "distilbert": {
+        "label": "NEGATIVE",
+        "score": 0.9996,
+        "mapped_score": -0.9996
+      }
+    },
+    "emotional_significance": {
+      "label": "Normal Routine",
+      "score": 0.2
+    },
+    "temporal_context": {
+      "event_age": "4 days ago",
+      "event_date": "2025-05-07",
+      "time_indicators": [
+        "no specific time detected"
+      ]
+    },
+    "spatial_context": {
+      "location": "No location detected"
+    },
+    "activity_references": [],
+    "relationship_indicators": {
+      "family_mentions": []
+    },
+    "emotional_indicators": {
+      "grief_indicators": [
+        "active_grief"
+      ],
+      "trauma_indicators": [],
+      "severity_indicators": [
+        "grief_present"
+      ]
+    },
+    "care_needs": {
+      "potential_concerns": [
+        "safety_risk"
+      ],
+      "recommendations": [
+        "Validate feelings and provide emotional support",
+        "Consider scheduled discussion of memories in controlled therapeutic setting",
+        "Consider distraction techniques if distress increases",
+        "Schedule enjoyable activity following difficult memory discussions",
+        "Monitor for signs of depression or withdrawal"
+      ]
+    }
+  },
+  {
+    "meta": {
+      "timestamp": "2025-05-11 06:03:14",
+      "input_text": "I ate so much on my nephwe's party on 9 may at night, that now I hurts the most, so painful"
+    },
+    "sentiment_analysis": {
+      "combined": {
+        "label": "Negative",
+        "score": -0.8342
+      },
+      "vader": {
+        "score": -0.6693,
+        "label": "Negative"
+      },
+      "distilbert": {
+        "label": "NEGATIVE",
+        "score": 0.9991,
+        "mapped_score": -0.9991
+      }
+    },
+    "emotional_significance": {
+      "label": "Important",
+      "score": 0.4
+    },
+    "temporal_context": {
+      "event_age": "2 days ago",
+      "event_date": "2025-05-09",
+      "time_indicators": [
+        "night"
+      ]
+    },
+    "spatial_context": {
+      "location": "No location detected"
+    },
+    "activity_references": [],
+    "relationship_indicators": {
+      "family_mentions": []
+    },
+    "emotional_indicators": {
+      "grief_indicators": [
+        "active_grief"
+      ],
+      "trauma_indicators": [],
+      "severity_indicators": [
+        "grief_present"
+      ]
+    },
+    "care_needs": {
+      "potential_concerns": [
+        "safety_risk"
+      ],
+      "recommendations": [
+        "Validate feelings and provide emotional support",
+        "Consider scheduled discussion of memories in controlled therapeutic setting",
+        "Consider distraction techniques if distress increases",
+        "Schedule enjoyable activity following difficult memory discussions",
+        "Monitor for signs of depression or withdrawal"
+      ]
+    }
+  },
+  {
+    "meta": {
+      "timestamp": "2025-05-11 06:03:52",
+      "input_text": "I ate so much on my nephwe's party on 9 may at night, which was so tasty food, that I still remember the taste"
+    },
+    "sentiment_analysis": {
+      "combined": {
+        "label": "Positive",
+        "score": 0.7004
+      },
+      "vader": {
+        "score": 0.4019,
+        "label": "Positive"
+      },
+      "distilbert": {
+        "label": "POSITIVE",
+        "score": 0.9988,
+        "mapped_score": 0.9988
+      }
+    },
+    "emotional_significance": {
+      "label": "Important",
+      "score": 0.4
+    },
+    "temporal_context": {
+      "event_age": "2 days ago",
+      "event_date": "2025-05-09",
+      "time_indicators": [
+        "night"
+      ]
+    },
+    "spatial_context": {
+      "location": "No location detected"
+    },
+    "activity_references": [
+      "meals"
+    ],
+    "relationship_indicators": {
+      "family_mentions": []
+    },
+    "emotional_indicators": {
+      "grief_indicators": [
+        "memory_reflection"
+      ],
+      "trauma_indicators": [],
+      "severity_indicators": [
+        "grief_present"
+      ]
+    },
+    "care_needs": {
+      "potential_concerns": [],
+      "recommendations": [
+        "Validate feelings and provide emotional support",
+        "Consider scheduled discussion of memories in controlled therapeutic setting"
+      ]
+    }
+  }
+]

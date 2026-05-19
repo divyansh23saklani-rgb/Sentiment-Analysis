@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>🎙️ Song Identifier</title>
+</head>
+<body>
+  <h1>🎧 Identify That Song</h1>
+  <p id="status">Click the button to start</p>
+  <p id="countdown"></p>
+  <button id="start">Start Recording</button>
+  <pre id="result"></pre>
+
+  <script>
+    let mediaRecorder;
+    let chunks = [];
+
+    document.getElementById('start').onclick = async () => {
+    const status = document.getElementById('status');
+
+    // Check support
+    if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+        alert("Your browser does not support mediaDevices.getUserMedia()");
+        status.innerText = "❌ Browser unsupported";
+        return;
+    }
+
+    try {
+        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        status.innerText = "🎤 Microphone access granted.";
+        startRecording(stream);  // Your recording logic here
+    } catch (err) {
+        console.error("Mic access error:", err);
+        status.innerText = "🚫 Microphone access denied: " + err.message;
+        alert("Please allow microphone access in your browser settings.");
+    }
+    };
+
+
+    function startRecording(stream) {
+      mediaRecorder = new MediaRecorder(stream);
+      chunks = [];
+      mediaRecorder.start();
+      document.getElementById('status').innerText = "Recording...";
+      let secondsLeft = 12;
+
+      const countdown = setInterval(() => {
+        document.getElementById('countdown').innerText = `⏳ Recording: ${secondsLeft--}s left`;
+        if (secondsLeft < 0) clearInterval(countdown);
+      }, 1000);
+
+      mediaRecorder.ondataavailable = e => chunks.push(e.data);
+
+      mediaRecorder.onstop = () => {
+        const blob = new Blob(chunks, { type: 'audio/webm' });
+        const formData = new FormData();
+        formData.append('file', blob, 'audio.webm');
+
+        document.getElementById('status').innerText = "🎵 Sending to server...";
+        document.getElementById('countdown').innerText = "";
+
+        fetch('/identify', {
+          method: 'POST',
+          body: formData
+        })
+        .then(res => res.json())
+        .then(data => {
+          if (data.error) {
+            document.getElementById('result').innerText = "❌ " + data.error;
+          } else {
+            document.getElementById('result').innerText =
+              `🎶 Title: ${data.title}\n👤 Artist(s): ${data.artists.join(', ')}\n💿 Album: ${data.album}\n📅 Release: ${data.release_date}`;
+          }
+          document.getElementById('status').innerText = "✅ Done.";
+        })
+        .catch(err => {
+          document.getElementById('result').innerText = "❌ Upload failed: " + err;
+        });
+      };
+
+      // Auto-stop after 12 seconds
+      setTimeout(() => {
+        mediaRecorder.stop();
+      }, 12000);
+    }
+  </script>
+</body>
+</html>
